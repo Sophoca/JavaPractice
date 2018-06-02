@@ -29,14 +29,17 @@ public class EquilateralTriangle implements Shapes{
                 distance[0] = getDistance(vertex[0], vertex[1]);
                 distance[1] = getDistance(vertex[1], vertex[2]);
                 distance[2] = getDistance(vertex[2], vertex[0]);
-                area=getArea();
-                if (area == 0)
+                double[] slant=new double[TRIANGLE];
+                slant[0]=(vertex[0].getY()-vertex[1].getY())/(vertex[0].getX()-vertex[1].getX());
+                slant[1]=(vertex[1].getY()-vertex[2].getY())/(vertex[1].getX()-vertex[2].getX());
+                slant[2]=(vertex[2].getY()-vertex[0].getY())/(vertex[2].getX()-vertex[0].getX());
+                if (slant[0]==slant[1]||slant[1]==slant[2]||slant[2]==slant[0])
                     throw new CustomException("Error: the three vertices are collinear. " +
                         "Please enter non-collinear vertices");
                 flag = true;
+                area=getArea();
                 if (!(distance[0] == distance[1] && distance[1] == distance[2] && distance[2] == distance[0]))
                     throw new CustomException("Warning: the three sides are not equal, but continue your operation");
-
             } catch (CustomException ce) {
                 System.err.println("\n"+ce.getMessage());
             } catch (InputMismatchException ie){
@@ -48,6 +51,8 @@ public class EquilateralTriangle implements Shapes{
         }
     }
 
+    //---getter---
+    // there is already getDistance method that occurs name duplication
     public double[] returnDistance() {
         return distance;
     }
@@ -67,9 +72,9 @@ public class EquilateralTriangle implements Shapes{
     @Override
     public String toString() {
         return "\nType of shape: "+getClass().getSimpleName()+
-                "\n\tCoordinates of Vertex 1 point: "+df.format(vertex[0].getX())+", "+df.format(vertex[0].getY())+
-                "\n\tCoordinates of Vertex 2 point: "+df.format(vertex[1].getX())+", "+df.format(vertex[1].getY())+
-                "\n\tCoordinates of Vertex 3 point: "+df.format(vertex[2].getX())+", "+df.format(vertex[2].getY())+
+                "\n\tCoordinates of Vertex 1: "+df.format(vertex[0].getX())+", "+df.format(vertex[0].getY())+
+                "\n\tCoordinates of Vertex 2: "+df.format(vertex[1].getX())+", "+df.format(vertex[1].getY())+
+                "\n\tCoordinates of Vertex 3: "+df.format(vertex[2].getX())+", "+df.format(vertex[2].getY())+
                 "\n\tLength of side 1: "+df.format(distance[0])+
                 "\n\tLength of side 2: "+df.format(distance[1])+
                 "\n\tLength of side 3: "+df.format(distance[2]);

@@ -4,23 +4,23 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SquarePrism extends Square{
-    private double nHeight, lArea, area, volume=0;
-    private boolean flag=false;
+    private double nHeight, lArea, baseArea, area, volume;
+    private boolean flag=false, nHeightFlag=false;
     public SquarePrism(){
         super();
         while(!flag){
             try {
                 Thread.sleep(100);
-                System.out.print("\nPlease input Normal Height: ");
+                if(!nHeightFlag) System.out.print("\nPlease input Normal Height: ");
+                else System.out.print("\nPlease input positive value for Normal Height: ");
                 nHeight=input.nextDouble();
                 if(nHeight<=0) throw new CustomException("Error: Normal height should be positive");
-
-                lArea=getLateralArea();
+                flag=true;
                 area=getArea();
                 volume=getVolume();
-                flag=true;
             } catch (CustomException ce) {
                 System.err.println("\n"+ce.getMessage());
+                nHeightFlag=true;
             } catch (InputMismatchException ie){
                 input=new Scanner(System.in);
                 System.err.println("\nError: Please enter only double(int) type value.");
@@ -30,28 +30,35 @@ public class SquarePrism extends Square{
         }
     }
 
+    //---getter---
+    public double getBaseArea(){
+        return super.getArea();
+    }
     public double getLateralArea(){
-        return returnDistance()*4*nHeight;
+        return super.returnDistance()*4*nHeight;
+    }
+    public double getnHeight() {
+        return nHeight;
     }
 
     @Override
     public double getArea() {
-        return super.getArea()*2+getLateralArea();
+        lArea=getLateralArea();
+        return getBaseArea()*2+lArea;
     }
 
     public double getVolume(){
-        return super.getArea()*nHeight;
+        return getBaseArea()*nHeight;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString()+"\n\tNormal Height: "+df.format(nHeight);
     }
 
     @Override
     public String printExtra(){
-        return "\n\tNormal Height: "+df.format(nHeight)+
-                "\n\tLateral Surface Area: "+df.format(lArea)+
+        return "\n\tLateral Surface Area: "+df.format(lArea)+
                 "\n\tSurface Area: "+df.format(area)+
                 "\n\tVolume: "+df.format(volume);
     }

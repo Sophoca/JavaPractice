@@ -1033,7 +1033,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Assignment.EquilateralSquare",
+											"text": "Assignment.Square",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -5056,7 +5056,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFjlg/v/RXRwFg="
 					},
-					"name": "Assignment.EquilateralSquare",
+					"name": "Assignment.Square",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",

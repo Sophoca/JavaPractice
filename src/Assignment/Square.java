@@ -19,14 +19,14 @@ public class Square implements Shapes{
                 // Therefore, if there is no thread sleep, they printed in a different order on console.
                 System.out.println("\n  === "+getClass().getSimpleName()+" ===");
                 vertex[0]=new Poin2D();
-                System.out.printf("Please input x-coordinate of Upper Left Vertex of the square: ");
+                System.out.print("Please input x-coordinate of Upper Left Vertex of the square: ");
                 vertex[0].setX(input.nextDouble());
-                System.out.printf("Please input y-coordinate of Upper Left Vertex of the square: ");
+                System.out.print("Please input y-coordinate of Upper Left Vertex of the square: ");
                 vertex[0].setY(input.nextDouble());
                 vertex[1]=new Poin2D();
-                System.out.printf("Please input x-coordinate of Lower Right Vertex of the square: ");
+                System.out.print("Please input x-coordinate of Lower Right Vertex of the square: ");
                 vertex[1].setX(input.nextDouble());
-                System.out.printf("Please input y-coordinate of Lower Right Vertex of the square: ");
+                System.out.print("Please input y-coordinate of Lower Right Vertex of the square: ");
                 vertex[1].setY(input.nextDouble());
 
                 if(vertex[0].getX()>=vertex[1].getX())
@@ -53,6 +53,7 @@ public class Square implements Shapes{
         }
     }
 
+    //---getter---
     public double returnDistance(){ return distance; }
 
     @Override

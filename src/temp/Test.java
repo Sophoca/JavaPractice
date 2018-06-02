@@ -4,16 +4,9 @@ import java.io.*;
 class Test
 {
     double x, y;
-    public Test(double x, double y){
-        this.x=x;
-        this.y=y;
+    public Test(){
+        x=10;
+        y=20;
     }
 
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
-    }
 }
