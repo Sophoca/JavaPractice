@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Assignment</OriginalElement>
+  <nodes>
+    <node x="611.5531808035714" y="0.0">Assignment.Poin2D</node>
+    <node x="168.0" y="857.0">Assignment.EquilateralTriangularPrism</node>
+    <node x="223.30549975198414" y="1304.0">Assignment.EquilateralTriangularPyramid</node>
+    <node x="0.0" y="499.0">Assignment.EquilateralTriangle</node>
+    <node x="666.760974702381" y="1304.0">Assignment.SquarePyramid</node>
+    <node x="821.0531808035714" y="499.0">Assignment.Square</node>
+    <node x="471.2737103174603" y="1656.0">Assignment.TestShapes</node>
+    <node x="332.0531808035714" y="252.5">Assignment.CustomException</node>
+    <node x="723.7539744543651" y="857.0">Assignment.SquarePrism</node>
+    <node x="559.0531808035714" y="229.0">Assignment.Shapes</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Assignment.SquarePyramid" target="Assignment.SquarePrism">
+      <point x="45.0" y="-131.0" />
+      <point x="801.760974702381" y="1284.0" />
+      <point x="797.2539744543651" y="1284.0" />
+      <point x="-24.5" y="188.5" />
+    </edge>
+    <edge source="Assignment.TestShapes" target="Assignment.SquarePrism">
+      <point x="49.58333333333337" y="-26.5" />
+      <point x="605.8570436507937" y="1616.0" />
+      <point x="877.010974702381" y="1616.0" />
+      <point x="877.010974702381" y="1274.0" />
+      <point x="895.2539744543651" y="1274.0" />
+      <point x="73.5" y="188.5" />
+    </edge>
+    <edge source="Assignment.SquarePyramid" target="Assignment.Square">
+      <point x="74.99999999999997" y="-131.0" />
+      <point x="831.760974702381" y="1284.0" />
+      <point x="968.260974702381" y="1284.0" />
+      <point x="968.260974702381" y="837.0" />
+      <point x="955.5531808035714" y="837.0" />
+      <point x="0.0" y="154.0" />
+    </edge>
+    <edge source="Assignment.Square" target="Assignment.Poin2D">
+      <point x="38.428571428571445" y="-154.0" />
+      <point x="993.981752232143" y="479.0" />
+      <point x="965.3497023809525" y="479.0" />
+      <point x="965.3497023809525" y="209.0" />
+      <point x="716.9817522321429" y="209.0" />
+      <point x="23.428571428571445" y="84.5" />
+    </edge>
+    <edge source="Assignment.SquarePrism" target="Assignment.CustomException">
+      <point x="-78.39999999999998" y="-188.5" />
+      <point x="743.3539744543651" y="837.0" />
+      <point x="753.560974702381" y="837.0" />
+      <point x="753.560974702381" y="409.0" />
+      <point x="478.6781808035714" y="409.0" />
+      <point x="43.125" y="26.5" />
+    </edge>
+    <edge source="Assignment.TestShapes" target="Assignment.Square">
+      <point x="77.91666666666663" y="-26.5" />
+      <point x="634.1903769841269" y="1636.0" />
+      <point x="1007.0039744543651" y="1636.0" />
+      <point x="1007.0039744543651" y="837.0" />
+      <point x="1063.1531808035716" y="837.0" />
+      <point x="107.60000000000002" y="154.0" />
+    </edge>
+    <edge source="Assignment.Square" target="Assignment.Shapes">
+      <point x="0.0" y="-154.0" />
+      <point x="955.5531808035714" y="349.0" />
+      <point x="811.2406808035714" y="349.0" />
+      <point x="117.6875" y="50.0" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangularPyramid" target="Assignment.Shapes">
+      <point x="98.33333333333331" y="-131.0" />
+      <point x="439.63883308531746" y="1284.0" />
+      <point x="546.1070436507937" y="1284.0" />
+      <point x="546.1070436507937" y="479.0" />
+      <point x="676.7406808035714" y="479.0" />
+      <point x="-16.8125" y="50.0" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangularPyramid" target="Assignment.EquilateralTriangle">
+      <point x="-98.33333333333343" y="-131.0" />
+      <point x="242.97216641865072" y="1274.0" />
+      <point x="121.92162698412699" y="1274.0" />
+      <point x="121.92162698412699" y="837.0" />
+      <point x="134.5" y="837.0" />
+      <point x="0.0" y="154.0" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangularPrism" target="Assignment.EquilateralTriangle">
+      <point x="-44.599999999999966" y="-188.5" />
+      <point x="234.90000000000003" y="837.0" />
+      <point x="242.10000000000002" y="837.0" />
+      <point x="107.60000000000002" y="154.0" />
+    </edge>
+    <edge source="Assignment.Shapes" target="Assignment.Poin2D">
+      <point x="-5.6843418860808015E-14" y="-50.0" />
+      <point x="0.0" y="84.5" />
+    </edge>
+    <edge source="Assignment.SquarePrism" target="Assignment.Shapes">
+      <point x="0.0" y="-188.5" />
+      <point x="821.7539744543651" y="837.0" />
+      <point x="800.6031808035715" y="837.0" />
+      <point x="800.6031808035715" y="389.0" />
+      <point x="743.9906808035714" y="389.0" />
+      <point x="50.4375" y="50.0" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangularPrism" target="Assignment.CustomException">
+      <point x="0.0" y="-188.5" />
+      <point x="279.5" y="837.0" />
+      <point x="297.6740141369048" y="837.0" />
+      <point x="297.6740141369048" y="429.0" />
+      <point x="375.1781808035714" y="429.0" />
+      <point x="-60.375" y="26.5" />
+    </edge>
+    <edge source="Assignment.TestShapes" target="Assignment.EquilateralTriangularPrism">
+      <point x="-35.41666666666663" y="-26.5" />
+      <point x="520.8570436507937" y="1606.0" />
+      <point x="211.95133308531751" y="1606.0" />
+      <point x="211.95133308531751" y="1284.0" />
+      <point x="251.625" y="1284.0" />
+      <point x="-27.875" y="188.5" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangle" target="Assignment.CustomException">
+      <point x="38.428571428571445" y="-154.0" />
+      <point x="172.92857142857144" y="419.0" />
+      <point x="357.9281808035714" y="419.0" />
+      <point x="-77.625" y="26.5" />
+    </edge>
+    <edge source="Assignment.TestShapes" target="Assignment.EquilateralTriangularPyramid">
+      <point x="-7.0833333333332575" y="-26.5" />
+      <point x="549.190376984127" y="1586.0" />
+      <point x="400.30549975198414" y="1586.0" />
+      <point x="59.0" y="131.0" />
+    </edge>
+    <edge source="Assignment.SquarePyramid" target="Assignment.Shapes">
+      <point x="-15.0" y="-131.0" />
+      <point x="741.760974702381" y="1264.0" />
+      <point x="710.0531808035714" y="1264.0" />
+      <point x="16.8125" y="50.0" />
+    </edge>
+    <edge source="Assignment.TestShapes" target="Assignment.EquilateralTriangle">
+      <point x="-77.91666666666663" y="-26.5" />
+      <point x="478.3570436507937" y="1636.0" />
+      <point x="91.91666666666674" y="1636.0" />
+      <point x="91.91666666666674" y="837.0" />
+      <point x="26.899999999999977" y="837.0" />
+      <point x="-107.60000000000002" y="154.0" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangularPyramid" target="Assignment.CustomException">
+      <point x="19.66666666666663" y="-131.0" />
+      <point x="360.9721664186508" y="1264.0" />
+      <point x="413.5531808035714" y="1264.0" />
+      <point x="413.5531808035714" y="439.0" />
+      <point x="409.6781808035714" y="439.0" />
+      <point x="-25.875" y="26.5" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangularPyramid" target="Assignment.EquilateralTriangularPrism">
+      <point x="-59.00000000000006" y="-131.0" />
+      <point x="282.3054997519841" y="1284.0" />
+      <point x="307.375" y="1284.0" />
+      <point x="27.875" y="188.5" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangle" target="Assignment.Poin2D">
+      <point x="-38.42857142857139" y="-154.0" />
+      <point x="96.07142857142861" y="399.0" />
+      <point x="132.76395089285717" y="399.0" />
+      <point x="132.76395089285717" y="209.0" />
+      <point x="670.1246093750001" y="209.0" />
+      <point x="-23.428571428571388" y="84.5" />
+    </edge>
+    <edge source="Assignment.SquarePrism" target="Assignment.Square">
+      <point x="39.200000000000045" y="-188.5" />
+      <point x="860.9539744543652" y="837.0" />
+      <point x="847.9531808035715" y="837.0" />
+      <point x="-107.60000000000002" y="154.0" />
+    </edge>
+    <edge source="Assignment.Square" target="Assignment.CustomException">
+      <point x="-115.28571428571422" y="-154.0" />
+      <point x="840.2674665178572" y="379.0" />
+      <point x="513.1781808035714" y="379.0" />
+      <point x="77.625" y="26.5" />
+    </edge>
+    <edge source="Assignment.SquarePyramid" target="Assignment.CustomException">
+      <point x="-45.0" y="-131.0" />
+      <point x="711.760974702381" y="1274.0" />
+      <point x="633.0873077876985" y="1274.0" />
+      <point x="633.0873077876985" y="419.0" />
+      <point x="461.4281808035714" y="419.0" />
+      <point x="25.875" y="26.5" />
+    </edge>
+    <edge source="Assignment.TestShapes" target="Assignment.SquarePyramid">
+      <point x="7.083333333333371" y="-26.5" />
+      <point x="563.3570436507937" y="1586.0" />
+      <point x="711.760974702381" y="1586.0" />
+      <point x="-45.0" y="131.0" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangle" target="Assignment.Shapes">
+      <point x="115.28571428571428" y="-154.0" />
+      <point x="249.78571428571428" y="459.0" />
+      <point x="609.4906808035714" y="459.0" />
+      <point x="-84.0625" y="50.0" />
+    </edge>
+    <edge source="Assignment.EquilateralTriangularPrism" target="Assignment.Shapes">
+      <point x="89.19999999999999" y="-188.5" />
+      <point x="368.7" y="837.0" />
+      <point x="346.0" y="837.0" />
+      <point x="346.0" y="469.0" />
+      <point x="643.1156808035714" y="469.0" />
+      <point x="-50.4375" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="604.5" y="304.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
