@@ -39,7 +39,8 @@ public class Square implements Shapes{
                             "\nPlease enter valid coordinates.");
                 getDistance(vertex[0], vertex[1]);
                 if(distance==0)
-                    throw new CustomException("Error: this is not square. Please enter vertices that make square.");
+                    throw new CustomException("Error: this is not a square. " +
+                            "Please enter valid vertices that make the square.");
                 flag=true;
                 area=getArea();
             } catch (CustomException ce){

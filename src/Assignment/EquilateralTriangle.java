@@ -36,6 +36,9 @@ public class EquilateralTriangle implements Shapes{
                 if (slant[0]==slant[1]||slant[1]==slant[2]||slant[2]==slant[0])
                     throw new CustomException("Error: the three vertices are collinear. " +
                         "Please enter non-collinear vertices");
+                if(distance[0]==0||distance[1]==0||distance[2]==0)
+                    throw new CustomException("Error: this is not a triangle. " +
+                            "Please enter valid vertices that make the triangle.");
                 flag = true;
                 area=getArea();
                 if (!(distance[0] == distance[1] && distance[1] == distance[2] && distance[2] == distance[0]))
