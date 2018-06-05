@@ -13,12 +13,12 @@ public class EquilateralTriangularPrism extends EquilateralTriangle {
                 Thread.sleep(100);
                 if(!nHeightFlag) System.out.print("\nPlease input Normal Height: ");
                 else System.out.print("\nPlease input positive value for Normal Height: ");
-                nHeight=input.nextDouble();
+                setnHeight(input.nextDouble());
                 if(nHeight<=0)
                     throw new CustomException("Error: Normal height should be positive");
                 flag=true;
-                area=getArea();
-                volume=getVolume();
+                setArea(getArea());
+                setVolume(getVolume());
             } catch (CustomException ce) {
                 System.err.println("\n"+ce.getMessage());
                 nHeightFlag=true;
@@ -30,6 +30,18 @@ public class EquilateralTriangularPrism extends EquilateralTriangle {
             }
         }
     }
+
+    //---setter---
+    public void setnHeight(double nHeight) {
+        this.nHeight=nHeight;
+    }
+    public void setArea(double area){
+        this.area=area;
+    }
+    public void setVolume(double volume){
+        this.volume=volume;
+    }
+
 
     //---getter---
     public double getnHeight() {

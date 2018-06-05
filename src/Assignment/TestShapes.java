@@ -6,8 +6,10 @@ public class TestShapes {
         System.out.println("<INPUT>");
         EquilateralTriangle eTriangle=new EquilateralTriangle();
         Square square=new Square();
-        EquilateralTriangularPrism eTriPrism=new EquilateralTriangularPrism();
-        SquarePrism sPrism=new SquarePrism();
+        //Polymorphism
+        EquilateralTriangle eTriPrism=new EquilateralTriangularPrism();
+        Square sPrism=new SquarePrism();
+        //nonPolymorphism
         EquilateralTriangularPyramid eTriPyramid=new EquilateralTriangularPyramid();
         SquarePyramid sPyramid=new SquarePyramid();
 

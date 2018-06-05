@@ -13,12 +13,12 @@ public class EquilateralTriangularPyramid extends EquilateralTriangularPrism {
                 Thread.sleep(100);
                 if(!sHeightFlag) System.out.print("\nPlease input Slant Height: ");
                 else System.out.print("\nPlease input correct Slant Height: ");
-                sHeight=input.nextDouble();
+                setsHeight(input.nextDouble());
                 if(sHeight<=getnHeight()) throw new CustomException(
                         "Error: Slant Height should be larger than normal Height.");
                 flag=true;
-                area=getArea();
-                volume=getVolume();
+                setArea(getArea());
+                setVolume(getVolume());
             } catch (CustomException ce) {
                 System.err.println("\n"+ce.getMessage());
                 sHeightFlag=true;
@@ -29,6 +29,17 @@ public class EquilateralTriangularPyramid extends EquilateralTriangularPrism {
                 System.err.println("\n"+e.getMessage());
             }
         }
+    }
+
+    //---setter---
+    public void setsHeight(double sHeight) {
+        this.sHeight=sHeight;
+    }
+    public void setArea(double area){
+        this.area=area;
+    }
+    public void setVolume(double volume){
+        this.volume=volume;
     }
 
     @Override

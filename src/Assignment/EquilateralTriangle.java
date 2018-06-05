@@ -26,9 +26,9 @@ public class EquilateralTriangle implements Shapes{
                     System.out.printf("Please input y-coordinate of the Vertex%d of the triangle: ", i + 1);
                     vertex[i].setY(input.nextDouble());
                 }
-                distance[0] = getDistance(vertex[0], vertex[1]);
-                distance[1] = getDistance(vertex[1], vertex[2]);
-                distance[2] = getDistance(vertex[2], vertex[0]);
+                setDistance(getDistance(vertex[0], vertex[1]), 0);
+                setDistance(getDistance(vertex[1], vertex[2]), 1);
+                setDistance(getDistance(vertex[2], vertex[0]), 2);
                 double[] slant=new double[TRIANGLE];
                 slant[0]=(vertex[0].getY()-vertex[1].getY())/(vertex[0].getX()-vertex[1].getX());
                 slant[1]=(vertex[1].getY()-vertex[2].getY())/(vertex[1].getX()-vertex[2].getX());
@@ -40,7 +40,7 @@ public class EquilateralTriangle implements Shapes{
                     throw new CustomException("Error: this is not a triangle. " +
                             "Please enter valid vertices that make the triangle.");
                 flag = true;
-                area=getArea();
+                setArea(getArea());
                 if (!(distance[0] == distance[1] && distance[1] == distance[2] && distance[2] == distance[0]))
                     throw new CustomException("Warning: the three sides are not equal, but continue your operation");
             } catch (CustomException ce) {
@@ -52,6 +52,13 @@ public class EquilateralTriangle implements Shapes{
                 System.err.println("\n"+e.getMessage());
             }
         }
+    }
+    //---setter---
+    public void setDistance(double distance, int i) {
+        this.distance[i] = distance;
+    }
+    public void setArea(double area){
+        this.area=area;
     }
 
     //---getter---
